@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-black text-white container p-5 w-50 text-center">
+        <h1>PRIME OR NON PRIME CHECKER</h1>
+        <input class="form-control mt-5" id="a1" type="text" placeholder="ENTER NUMBER">
+
+
+        <button type="button" onclick="sum()" class="btn btn-info mt-5" style="background-color: darkslateblue; border: none;color: azure;">CHECK</button>
+    </div>
+</body>
+<script>
+    function sum() {
+        s = parseInt(a1.value)
+
+        for (i = 2; i <= s; i++) {
+            if (s % i == 0) {
+
+                break
+            }
+
+
+        }
+        if (i == s) {
+            alert(`${s} is prime`)
+        }
+        else {
+            alert(`${s} not prime`)
+        }
+    }
+</script>
+
+</html>
